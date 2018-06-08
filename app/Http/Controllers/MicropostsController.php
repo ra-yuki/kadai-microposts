@@ -29,7 +29,7 @@ class MicropostsController extends Controller
             'content' => 'required|max:191'
         ]);
         
-        $request->user()->microposts()-create([
+        $request->user()->microposts()->create([
             'content' => $request->content
         ]);
         
